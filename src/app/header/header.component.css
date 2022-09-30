@@ -1,0 +1,10 @@
+ul{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    background-color: blanchedalmond;
+    color: brown;
+    text-align: center;
+}
+

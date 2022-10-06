@@ -7,6 +7,9 @@ import { FormControl, FormGroup, FormGroupDirective } from '@angular/forms';
 })
 export class InputformComponent implements OnInit {
   reactiveForm!: FormGroup
+
+  nom : String = "";
+
   constructor() { }
 
   ngOnInit(): void {
@@ -25,6 +28,9 @@ export class InputformComponent implements OnInit {
 
   buttonToggle: boolean = false;
   buttonClick(): void {
+    this.nom = this.reactiveForm.controls['nom'].value;
+
+    console.log (this.nom );
     this.buttonToggle = !this.buttonToggle;
   }
 }

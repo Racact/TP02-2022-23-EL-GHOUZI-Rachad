@@ -31,7 +31,12 @@
         <label>Mdp :</label>
         <input type="password" id="pwd" required>
         <br>
-        <button type="submit" class="btn btn-primary">Envoyer</button>
-        <app-form-show [formulaire]="reactiveForm"></app-form-show>
+        <button (click) = "buttonClick ()" class="btn btn-primary">Envoyer</button>
+        
     </form>
+  </div>
+
+  <div>
+
+    <app-form-show [nom]="nom"></app-form-show>
   </div>

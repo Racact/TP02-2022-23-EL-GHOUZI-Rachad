@@ -21,6 +21,6 @@ import { InputformComponent } from './inputform/inputform.component';
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent, InputformComponent, HeaderComponent, FooterComponent, FormShowComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
